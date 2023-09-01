@@ -1,3 +1,4 @@
 import Input from "./Input";
+import Navbar from "./Navbar/Navbar";
 
-export { Input };
+export { Input, Navbar };

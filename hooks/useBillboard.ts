@@ -1,4 +1,4 @@
-import fetcher from "@/lib/fetcher";
+import fetcher from "@/libs/fetcher";
 import useSwr from "swr";
 
 const useBillboard = () => {

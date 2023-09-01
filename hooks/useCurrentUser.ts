@@ -1,11 +1,10 @@
-import fetcher from "@/lib/fetcher";
+import fetcher from "@/libs/fetcher";
 import useSwr from "swr";
 
 const useCurrentUser = () => {
-	const { data, error, isLoading } = useSwr("/api/current", fetcher);
-	console.log("Masuk hooks");
-	console.log(data, error, isLoading);
-	return { data, error, isLoading };
+	const { data, error, isLoading, mutate } = useSwr("/api/current", fetcher);
+
+	return { data, error, isLoading, mutate };
 };
 
 export default useCurrentUser;
